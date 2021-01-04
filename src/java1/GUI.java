@@ -11,8 +11,6 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 import java.awt.Color;
-import java.awt.Font;
-import java.awt.Graphics;
 
 public class GUI implements ActionListener {
 	private static JLabel userLabel;
@@ -36,7 +34,6 @@ public class GUI implements ActionListener {
 		
 		userLabel = new JLabel("Username");
 		userLabel.setBounds(10, 20, 80, 25);
-		//userLabel.setFont(new Font("Arial",Font.PLAIN, 20));
 		panel.add(userLabel);
 		
 		userText = new JTextField(20);
@@ -104,7 +101,5 @@ public class GUI implements ActionListener {
 		if(user.isBlank() || password.isBlank()) {
 			success.setText("");
 		}
-	}
-	
-		
+	}		
 }
